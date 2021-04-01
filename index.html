@@ -28,7 +28,7 @@
               <h2>Let's Talk!</h2>
               <p class="text-tiny">We will get back to you within one or two days through email.</p>
             </div>
-            <form class="contact-form">
+            <form class="contact-form" action="POST" data-netlify="true">
               <div class="email-wrap">
               <label class="email-label" for="name">Name:</label>
               <input id="name" class="email-input" type="text" name='name' value='' placeholder='Name *' required>
@@ -45,11 +45,15 @@
               <label class="email-label" for="message">Message:</label>
               <input class="email-input" type="text" name='message' value='' placeholder='Message *' required>
             </div>
+            <div class="email-wrap">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
+
             </form>
-            <a href="#" class="btn btn-xl showcase-cta" type="submit">
+            <a href="#" class="btn btn-xl pricing-cta" type="submit">
               Send Request
             </a>
-            
+             
           </div>
         </div>
       <div class="showcase-content">
@@ -177,18 +181,18 @@
       </div>
     </div>
 
-    <!-- tab 1 -->
+    
     <div class="clients-container">
       <h3 class="clients text-lg">Most Recent Work</h3>
-      <div id="tab-1-cnt" class="tab-content-item show">
+      <!-- tab 1 -->
+      <div id="tab-3-cnt" class="tab-content-item">
         <div class="tab-1-cnt-inner">
           <div>
-            <h3 class="text-lg">Avagene's</h3>
-            <p class="text-sm">Web Design, Development</p>
-            <a href="https://raftcreative.github.io/avas/" class="btn btn-lg" target="_blank" rel="noopener">View Project</a>
+            <h3 class="text-lg">RSP</h3>
+            <p class="text-sm">Branding, Web Design, Development</p>
+            <a href="https://www.behance.net/gallery/116665775/Ready-Set-Paws" class="btn btn-lg">View Project</a>
           </div>
-          <!-- <img src="img/sapling.jpg" alt="cancel anytime" class="tab-img"/> -->
-          <figure class="tab-img tab-1-img"></figure>
+          <figure class="tab-img tab-3-img"></figure>
         </div>
       </div>
 
@@ -199,23 +203,24 @@
           <div class="reverse">
             <h3 class="text-lg">Puppytask</h3>
             <p class="text-sm">Animation, Illustration, Web Design, Development</p>
-            <a href="https://raftcreative.github.io/puppytask/" class="btn btn-lg" target="_blank" rel="noopener">View Project</a>
+            <a href="https://www.behance.net/gallery/116665819/Puppytask" class="btn btn-lg" target="_blank" rel="noopener">View Project</a>
           </div>
           <figure class="tab-img tab-2-img"></figure>
         </div>
       </div>
 
       <!-- tab 3 -->
-      <div id="tab-3-cnt" class="tab-content-item">
+      <div id="tab-1-cnt" class="tab-content-item show">
         <div class="tab-1-cnt-inner">
           <div>
-            <h3 class="text-lg">SCK.</h3>
-            <p class="text-sm">Illustration, Web Design</p>
-            <a href="#" class="btn btn-lg">View Project</a>
+            <h3 class="text-lg">Super Donuts</h3>
+            <p class="text-sm">Branding, Web Design, Development</p>
+            <a href="https://www.behance.net/gallery/116665735/Super-Donuts" class="btn btn-lg" target="_blank" rel="noopener">View Project</a>
           </div>
-          <figure class="tab-img tab-3-img"></figure>
+          <figure class="tab-img tab-1-img"></figure>
         </div>
       </div>
+      
     </div>
     <!-- faq 
       <div id="tab-faq" class="tab-content-item">
@@ -269,7 +274,7 @@
           <h3 class="text-lg">Standard</h3>
           <p class="text-dark">$250/mo.</p>
         </div>
-        <div>
+        <div class="card-btm">
           <ul>
             <li>Unlimited Edits</li>
             <li>Includes Hosting</li>
@@ -284,13 +289,28 @@
           <h3 class="text-lg">Standard (no blog)</h3>
           <p class="text-dark">$200/mo.</p>
         </div>
-        <div>
+        <div class="card-btm">
           <ul>
-
             <li>Unlimited Edits</li>
             <li>Includes Hosting</li>
             <li>24/7 Customer Service</li>
             <li class="none">No Blog</li>
+          </ul>
+          <button href="" class="btn btn-lg pricing-cta modalBtn">Get in Touch</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-top b">
+          <h3 class="text-lg">Additional Services</h3>
+          <p class="text-dark">Contact Us</p>
+        </div>
+        <div class="card-btm">
+          <ul>
+            <li>Animation</li>
+            <li>Branding</li>
+            <li>Illustration</li>
+            <li>Product Photography</li>
+            <li>Social Media Graphics</li>
           </ul>
           <button href="" class="btn btn-lg pricing-cta modalBtn">Get in Touch</button>
         </div>
